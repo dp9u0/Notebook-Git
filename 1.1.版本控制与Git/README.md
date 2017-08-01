@@ -67,5 +67,4 @@ Git等分布式版本版本控制系统,在每个工作区都会有一个版本�
 ```
 λ pwd
 /c/Users/guodp/Git-Test
-
 ```
