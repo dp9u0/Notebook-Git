@@ -5,13 +5,13 @@
 # 创建本地仓库
 
 ```
-λ  mkdir Git-Test
-λ  cd Git-Test
+$ mkdir Git-Test
+$ cd Git-Test
 λ  pwd
 C:\Users\guodp\Git-Test
-λ  git init
+$ git init
 Initialized empty Git repository in C:/Users/guodp/Git-Test/.git/
-λ  ls -al
+$ ls -al
 total 20
 drwxr-xr-x 1 guodp 197609 0 Aug  1 14:37 .
 drwxr-xr-x 1 guodp 197609 0 Aug  1 14:37 ..
@@ -27,16 +27,16 @@ drwxr-xr-x 1 guodp 197609 0 Aug  1 14:37 .git
 git 传输协议有git https 和本地文件路径几种,这个会在[2.6.Git原理](../2.6.Git原理/README.md)章节介绍。这里只需要知道,远程仓库会有一个地址来表示就可以.
 
 ```
-λ git clone https://github.com/dp9u0/Notebook.git # 地址
+$ git clone https://github.com/dp9u0/Notebook.git # 地址
 Cloning into 'Notebook'...
 remote: Counting objects: 26, done.
 remote: Compressing objects: 100% (18/18), done.
 remote: Total 26 (delta 12), reused 16 (delta 8), pack-reused 0
 Unpacking objects: 100% (26/26), done.
 
-λ cd Notebook\
+$ cd Notebook\
 
-λ pwd
+$ pwd
 /c/Users/guodp/Notebook
 ```
 

@@ -60,8 +60,8 @@ Git等分布式版本版本控制系统,在每个工作区都会有一个版本�
 
 ```
 # 请填写你的实际内容
-λ git config --global user.name "Your Name" 
-λ git config --global user.email "email@example.com"
+$ git config --global user.name "Your Name" 
+$ git config --global user.email "email@example.com"
 ```
 
 上述配置了你的姓名和邮箱地址,每次提交都会跟本地配置的邮箱和姓名做关联
@@ -69,13 +69,13 @@ Git等分布式版本版本控制系统,在每个工作区都会有一个版本�
 可以通过命令查看当前有哪些配置
 
 ```
-λ git config --list
+$ git config --list
 ```
 
 可以使用help查看帮助,例如查看 config 命令的帮助信息
 
 ```
-λ git help config
+$ git help config
 ```
 
 
@@ -85,9 +85,3 @@ Git等分布式版本版本控制系统,在每个工作区都会有一个版本�
 
 > **注** : 提到命令行,强烈安利一款命令行软件(Windows下的): __Cmder__ ，非常好用.
 
-> **注** : 因为我用的是 __Cmder__ ,因此后面跟命令行有关的操作代码展示,都会在命令行前看到类似 λ 的符号,不要奇怪,我懒得修改了
-
-```
-λ pwd
-/c/Users/guodp/Git-Test
-```
