@@ -117,11 +117,8 @@ $ git diff <commit1> <commit2>
 
 使用 git checkout 从版本库签出特定版本到工作区
 
-使用方式为 git checkout <commit> -- <file>
-
-commit 指的是 某个提交的SHA-1值 可以不用完整的,一般取前六位就可以了
-
 ```
+# git checkout <commit> -- <file> commit 指的是 某个提交的SHA-1值 可以不用完整的,一般取前六位就可以了
 $ git checkout ab2314c -- README.md # 签出
 ```
 
@@ -131,10 +128,10 @@ $ git checkout ab2314c -- README.md # 签出
 
 ## revert
 
-git revert <commit> : 生成一个新的提交来撤销某次提交 此次提交之前的commit都会被保留
+git revert : 生成一个新的提交来撤销某次提交 此次提交之前的commit都会被保留
 
 ```
-$ git revert a1cbcf # 完成后查看 commit ab2314c 依旧存在 并且有了一个新的提交撤销 ab2314c 这个提交
+$ git revert <commit> # 完成后查看 commit ab2314c 依旧存在 并且有了一个新的提交撤销 ab2314c 这个提交
 
 $ git log
 commit f362392238e980369f60ab7a45e7e70f07ded7d8
@@ -154,9 +151,10 @@ Date:   Tue Aug 1 15:38:14 2017 +0800
 
 ## reset
 
-git reset <commit> 用来回退到某个指定的提交(commit):
+用来回退到某个指定的提交(commit):
 
 ```
+# git reset <commit> 
 git reset --mixed <commit> : 默认 回退 commit 和 index 保留 working tree 
 git reset --soft  <commit> : 回退到某个版本 只回退 commit 保留 index 和 working tree
 git reset --hard  <commit> : 彻底回退到某个版本 同时也会 index 和 working tree 都会被修改
