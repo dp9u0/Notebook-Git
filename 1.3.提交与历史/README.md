@@ -108,7 +108,7 @@ $ git log --pretty # 格式化输出
 $ git diff <file> # working tree 和 index 特定文件的差别
 $ git diff --cached <file> # index 与 commit
 $ git diff --staged <file> # working tree 与 commit
-$ git diff <commit1> <commit2>
+$ git diff <commit1> <commit2> # 如果不提供 默认为 working tree
 ```
 
 > diff 还可以比较分支,[分支](../1.4.分支/README.md)章节会再介绍
