@@ -144,8 +144,10 @@ $ git cat-file -p f7efdb
 本质上,分支,当前分支,tag等都是指向的commit对象,主要的引用有以下几中:
 
 * HEAD : 当前分支
-* heads(branch) : 本地分支
-* remotes(remote branch) : 远程分支
+* heads(branch) : 本地引用(分支)
+* remotes(remote branch) : 远程引用
 * tags : tag 引用
+
+可以通过 命令 `git update-ref refs/heads/master <SHA-1>` 更新引用
 
 ![对象和引用关系图](./对象和引用关系图.png)
