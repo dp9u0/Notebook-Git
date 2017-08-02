@@ -151,3 +151,9 @@ $ git cat-file -p f7efdb
 可以通过 命令 `git update-ref refs/heads/master <SHA-1>` 更新引用
 
 ![对象和引用关系图](./对象和引用关系图.png)
+
+## 包文件
+
+* 小文件 : 差异
+
+* 大文件 : 完整压缩
