@@ -15,7 +15,7 @@
 
 # 暂存
 
-在仓库中添加一个文件 README.md ,使用git add 将文件添加暂存开始跟踪该文件的修改
+在仓库中添加一个文件 README.md ,使用 `git add` 将文件添加暂存开始跟踪该文件的修改
 
 ```
 $ touch README.md # 创建文件
@@ -26,7 +26,7 @@ $ git add README.md #或者使用 git add . 添加目录当前所有文件
 
 # 提交 
 
-在git add 前提下,使用 git commit 提交修改,将修改提交到版本库
+在 `git add` 前提下,使用 `git commit` 提交修改,将修改提交到版本库
 
 ```
 λ git commit -m "add README.md"
@@ -41,7 +41,7 @@ $ git add README.md #或者使用 git add . 添加目录当前所有文件
 
 # 状态查看
 
-使用命令 git status 查看当前仓库的状态
+使用命令 `git status` 查看当前仓库的状态
 
 ```                                                 
 $ touch README.md                                                            
@@ -86,7 +86,7 @@ $ git status -s
 
 # 历史查看
 
-可以通过 git log 查看历史提交.
+可以通过 `git log` 查看历史提交.
 
 ```
 $ git log # 不用任何参数 会按提交时间列出所有的提交,最近的提交排在最上面
@@ -102,7 +102,7 @@ $ git log --pretty # 格式化输出
 
 # 比较
 
-比较两次提交可以使用 git diff 命令
+比较两次提交可以使用 `git diff` 命令
 
 ```
 $ git diff <file> # working tree 和 index 特定文件的差别
@@ -115,7 +115,7 @@ $ git diff <commit1> <commit2>
 
 # 签出
 
-使用 git checkout 从版本库签出特定版本到工作区
+使用 `git checkout` 从版本库签出特定版本到工作区
 
 ```
 # git checkout <commit> -- <file> commit 指的是 某个提交的SHA-1值 可以不用完整的,一般取前六位就可以了
@@ -128,7 +128,7 @@ $ git checkout ab2314c -- README.md # 签出
 
 ## revert
 
-git revert : 生成一个新的提交来撤销某次提交 此次提交之前的commit都会被保留
+`git revert` : 生成一个新的提交来撤销某次提交 此次提交之前的commit都会被保留
 
 ```
 $ git revert <commit> # 完成后查看 commit ab2314c 依旧存在 并且有了一个新的提交撤销 ab2314c 这个提交
@@ -151,7 +151,7 @@ Date:   Tue Aug 1 15:38:14 2017 +0800
 
 ## reset
 
-用来回退到某个指定的提交(commit):
+用 `git reset` 来回退到某个指定的提交(commit):
 
 ```
 # git reset <commit> 
@@ -164,7 +164,6 @@ git reset --hard  <commit> : 彻底回退到某个版本 同时也会 index 和 
 
 ## commit --amend
 
-修改上次提交:(**这个会修改上次提交的SHA-1值**,因此实际上是一个新的提交)
+通过 `git commit --amend` 修改上次提交:(**这个会修改上次提交的SHA-1值**,因此实际上是一个新的提交)
 * 如果当前没有新的修改,可以修改上次提交的messsage
 * 如果当前有新的修改,可以修改上次提交的message,同时将修改跟上次提交一起作为同一个提交
-

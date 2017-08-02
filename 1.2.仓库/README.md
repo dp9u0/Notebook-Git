@@ -24,7 +24,7 @@ drwxr-xr-x 1 guodp 197609 0 Aug  1 14:37 .git
 
 关于远程仓库的创建会在[2.4.Git服务](../2.4.Git服务/README.md)章节介绍.
 
-git 传输协议有git https 和本地文件路径几种,这个会在[2.6.Git原理](../2.6.Git原理/README.md)章节介绍。这里只需要知道,远程仓库会有一个地址来表示就可以.
+git 传输协议有 git https 和本地文件路径几种,这个会在[2.6.Git原理](../2.6.Git原理/README.md)章节介绍。这里只需要知道,远程仓库会有一个地址来表示就可以.
 
 ```
 $ git clone https://github.com/dp9u0/Notebook.git # 地址
