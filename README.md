@@ -39,9 +39,6 @@
 * [比较](/1.3.提交与历史/README.md#比较)
 * [签出](/1.3.提交与历史/README.md#签出)
 * [修改提交](/1.3.提交与历史/README.md#修改提交)
-    * revert
-    * reset
-    * commit --amend
 
 ## [分支](/1.4.分支/README.md)
 
@@ -53,9 +50,6 @@
 * [删除](/1.4.分支/README.md#删除)
 * [合并](/1.4.分支/README.md#合并)
 * [远程分支](/1.4.分支/README.md#远程分支)
-    * fetch
-    * pull
-    * push
 
 ## [标签](/1.5.标签/README.md)
 
@@ -63,32 +57,25 @@
 
 # 进阶篇
 
+## [Git原理](/2.0.Git原理/README.md)
+
+> **主要内容** : 介绍Git内部对象和引用原理
+
 ## [命令进阶](/2.1.命令进阶/README.md)
 
-* checkout
-* revert
-* reset
-* rebase
-* commit --amend
-* cherry-pick
+> **主要内容** : 介绍一些高级命令或者常见命令的高级用法
 
 ## [分支工作流](/2.2.分支工作流/README.md)
+
+> **主要内容** : 介绍Git Flow
  
 ## [多人协作](/2.3.多人协作/README.md)
 
+> **主要内容** : Todo
+
 ## [Git服务](/2.4.Git服务/README.md)
 
-* 搭建自己的Git服务器
-* Github
-* GitLab
-
 ## [Git自定义](/2.5.Git自定义/README.md)
-
-* 配置
-* 钩子
-* 子模块
-
-## [Git原理](/2.6.Git原理/README.md)
 
 ## [Git技巧](/2.7.Git技巧/README.md)
 

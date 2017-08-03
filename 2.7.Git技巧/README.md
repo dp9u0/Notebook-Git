@@ -1,11 +1,3 @@
-### Git Cheat Sheet
+技巧多数以Issue的形式进行,此处仅仅是列表.
 
-[Cheat Sheet](./git-cheat-sheet-zh.md)
-
-### 清理当前所有未提交修改
-```
-git checkout -- .
-git clean -f
-```
-
-
+* [Git Cheat Sheet](./git-cheat-sheet-zh.md)
