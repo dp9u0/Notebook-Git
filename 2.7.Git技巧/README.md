@@ -341,7 +341,7 @@ $ git push --tags
 ```
 
 ---
-###合并与重置(Rebase)
+### 合并与重置
 
 ##### 将分支合并到当前HEAD中：
 ```
@@ -448,3 +448,7 @@ $ git rm -r --cached .
 $ git add .
 $ git commit -m "remove xyz file"
 ```
+
+### git-flow
+
+todo
